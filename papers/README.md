@@ -2,7 +2,19 @@
 
 
 ## Black hole physics
-* [review]() by Chris Reynolds
+* [review]() by Chris Reynolds on X-ray reflection spectroscopy
+* [more recent review](https://arxiv.org/pdf/1507.06153.pdf) on black hole spin theory + observations by M. Middleton
+* [Dauser et al. 2014: The role of the reflection fraction in constraining black hole spin](https://arxiv.org/abs/1408.2347)
+* [McClintock et al, 2007: Estimating the spins of stellar-mass black holes](https://arxiv.org/abs/0707.4492)
+* 
+
+
+## Pile-Up
+* [Chandra ABC Guide to Pileup](http://cxc.harvard.edu/ciao/download/doc/pileup_abc.pdf) (note, they mean ABC as in alphabet not as in Approximate Bayesian Computation below)
+* [J. Ballet, 2001: Pile-up on X-ray CCD Instruments](http://adsabs.harvard.edu/abs/2001ASPC..238..381B)
+* [Davis, 3001: Event pileup in Charge-coupled Devices](http://adsabs.harvard.edu/abs/2001ApJ...562..575D)
+* [Controversial analysis of GX 339-4 data](http://adsabs.harvard.edu/abs/2010MNRAS.407.2287D)
+* [Other side of the argument from paper above](http://adsabs.harvard.edu/abs/2010ApJ...724.1441M)
 
 ## Approximate Bayesian Computation/Likelihood-Free Inference
 * [ABC for Astronomy tutorial slides](http://astrostatistics.psu.edu/su14/lectures/cisewski_abc1.pdf)
