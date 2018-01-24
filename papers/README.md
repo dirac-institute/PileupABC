@@ -2,11 +2,10 @@
 
 
 ## Black hole physics
-* [review](https://ui.adsabs.harvard.edu/#abs/2014SSRv..183..277R/abstract) by Chris Reynolds on X-ray reflection spectroscopy
 * [more recent review](https://arxiv.org/pdf/1507.06153.pdf) on black hole spin theory + observations by M. Middleton
 * [Dauser et al. 2014: The role of the reflection fraction in constraining black hole spin](https://arxiv.org/abs/1408.2347)
 * [McClintock et al, 2007: Estimating the spins of stellar-mass black holes](https://arxiv.org/abs/0707.4492)
-* 
+* [review](https://ui.adsabs.harvard.edu/#abs/2014SSRv..183..277R/abstract) by Chris Reynolds on X-ray reflection spectroscopy (mostly on AGN, though) 
 
 
 ## Pile-Up
