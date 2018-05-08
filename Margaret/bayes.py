@@ -29,6 +29,7 @@ def log_likelihood(theta,data,E_max,E_min):
     log_like = np.multiply(-1.0,lam) + data*np.log(lam) + summation
     total_log_like = np.sum(log_like)
     if not np.isfinite(total_log_like):
+        #print 'WARNING: log likelihood value is not finite'
         return -np.inf
     else:
         return total_log_like
@@ -49,6 +50,7 @@ def neg_log_likelihood(theta,data,E_max,E_min):
     log_like = np.multiply(-1.0,lam) + data*np.log(lam) + summation
     total_log_like = np.sum(log_like)
     if not np.isfinite(total_log_like):
+        #print 'WARNING: neg log likelihood value is not finite'
         return -np.inf
     else:
         return -1*total_log_like
@@ -57,12 +59,14 @@ def log_prior_alpha(a):
     if (a > 0) and (a<5):
         return np.log(0.2)
     else:
+        #print 'WARNING: input alpha value out of bounds'
         return -np.inf
     
 def log_prior_logA(logA):
     if (logA<np.log(1000000))and(logA>np.log(100)):
         return np.log(1.0/(np.log(1000000)-np.log(100)))
     else:
+        #print 'WARNING: input logA value out of bounds'
         return -np.inf
     
 def log_posterior(log_like,log_priors):
