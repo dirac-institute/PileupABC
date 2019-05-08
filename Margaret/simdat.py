@@ -5,7 +5,7 @@ from astropy.table import Table, Column
 import time
 
 def test_func():
-    print 'test worked!'
+    print('test worked!')
 
 def energies_rs(a,b,gamma,N):
     import numpy as np
@@ -80,7 +80,7 @@ def simulate_data(stop,gamma,handle,arf_bins):
         #print 'generating photon energies via CDF method'
         energy = energies_cdf(energy_lo,energy_hi,gamma,N)
     else:
-        print 'invalid photon generation method entered'
+        print('invalid photon generation method entered')
         
     #Simulate pile up: bin arrival times, if there is more than one photon in a bin, combine their energies
     #and record as one photon, change other photon energies to 0
