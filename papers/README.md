@@ -34,4 +34,4 @@
 ## Machine Learning
 
 ## Comparison Metrics
-* [Approximate Bayesian Computation for forward modeling in cosmology (good section on distance metrics)](https://iopscience.iop.org/article/10.1088/1475-7516/2015/08/043/pdf)
+* [Approximate Bayesian Computation for forward modeling in cosmology](https://iopscience.iop.org/article/10.1088/1475-7516/2015/08/043/pdf) (good section on distance metrics)
