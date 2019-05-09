@@ -26,7 +26,7 @@ def log_likelihood(theta,data,E_max,E_min):
     a = theta[1]
     lam = integrate_lambda(E_max[1:],np.exp(logA),a) - integrate_lambda(E_min[1:],np.exp(logA),a)
     summation = gammaln(data+1)
-    log_like = np.multiply(-1.0,lam) + data*np.log(lam) + summation
+    log_like = np.multiply(-1.0,lam) + data*np.log(lam) - summation #changed from + summation to - summation 05/16/18
     total_log_like = np.sum(log_like)
     if not np.isfinite(total_log_like):
         #print 'WARNING: log likelihood value is not finite'
@@ -41,19 +41,7 @@ def neg_log_likelihood(theta,data,E_max,E_min):
     lambda = integral from E_min to E_max A*E**-a
     input theta = paramters where theta[0] = logA, theta[1] = alpha
     """
-    #E_min = np.arange(0.3,11.0,0.01)
-    #E_max = np.arange(0.31,11.01,0.01)
-    logA = theta[0]
-    a = theta[1]
-    lam = integrate_lambda(E_max[1:],np.exp(logA),a) - integrate_lambda(E_min[1:],np.exp(logA),a)
-    summation = gammaln(data+1)
-    log_like = np.multiply(-1.0,lam) + data*np.log(lam) + summation
-    total_log_like = np.sum(log_like)
-    if not np.isfinite(total_log_like):
-        #print 'WARNING: neg log likelihood value is not finite'
-        return -np.inf
-    else:
-        return -1*total_log_like
+    return -log_likelihood(theta,data,E_max,E_min)
     
 def log_prior_alpha(a):
     if (a > 0) and (a<5):
